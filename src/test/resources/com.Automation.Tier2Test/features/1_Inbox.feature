@@ -16,7 +16,7 @@ Feature: This Feature file tests functionalities available within Inbox
       | Expiry date > SystemDate+60 && Risk being worked upon by user |
     When User logs in and view Inbox
     Then Below Risks behaviour is observed
-      | Criteria                                                      | VisiblityInInxox |
+      | Criteria                                                      | VisiblityInInbox |
       | Expiry date = SystemDate                                      | Yes              |
       | Expiry date < SystemDate+60                                   | Yes              |
       | Expiry date > SystemDate+60                                   | NO               |

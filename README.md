@@ -20,5 +20,5 @@ Architecture- 3 Tier Architecture
 Techs used:
 1. Build Tool: Maven
 2. Feature file & Implementation : Cucumber
-3. Webdriver Navigation: Selenium
+3. Web Navigation: Selenium
 4. Assertion Library: Junit
