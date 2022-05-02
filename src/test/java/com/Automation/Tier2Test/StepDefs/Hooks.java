@@ -20,7 +20,7 @@ public class Hooks {
         System.out.println("Before");
         driverManager = new DriverManager();// created object DriverManager
         driverManager.setDriver();
-        driver = driverManager.getWebDriver(); // have a local refrence to the globally set driver.
+        driver = driverManager.getWebDriver(); // have a local reference to the globally set driver.
         this.scenario = scenario;
 
     }

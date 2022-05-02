@@ -7,7 +7,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //monochrome = true,
         //dryRun = true, // no actual execution, only to identify unimplemented scenarios exists.
         features = {"src/test/resources/com.Automation.Tier2Test/Features"},
         glue = {"classpath:com.Automation.Tier2Test.StepDefs"},

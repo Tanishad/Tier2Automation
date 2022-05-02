@@ -1,16 +1,19 @@
 package com.Automation.Tier2Test.Pages;
 
+import com.Automation.Tier2Test.Utilities.StringLibrary;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ContactUsPage {
     public WebDriver driver;
+    public StringLibrary stringLibrary;
 
     public String nameLocator = "//input[@type='text'][@name='name']";
     public ContactUsPage( WebDriver driver)
     {
         this.driver= driver;
+        stringLibrary = new StringLibrary();
     }
 
 
@@ -22,10 +25,10 @@ public class ContactUsPage {
         fillName();
 
         WebElement emailElement = driver.findElement(By.xpath("//input[@name='email']"));
-        emailElement.sendKeys("Random@abc.com");
+        emailElement.sendKeys(stringLibrary.getRandomEmail());
 
-        WebElement emailCheckBox1 = driver.findElement(By.xpath("//input[@name='Development_Support_Requirement']"));
-        emailCheckBox1.click();
+        WebElement checkBox1 = driver.findElement(By.xpath("//input[@name='Development_Support_Requirement']"));
+        checkBox1.click();
 
         WebElement queryBox = driver.findElement(By.xpath("//textarea[@name='Help']"));
         queryBox.sendKeys("something");
@@ -43,7 +46,7 @@ public class ContactUsPage {
 
     public void fillName() {
         WebElement nameElement = driver.findElement(By.xpath(nameLocator));
-        nameElement.sendKeys("Random");
+        nameElement.sendKeys(stringLibrary.getRandomAphabets(5));
     }
 
 

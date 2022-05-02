@@ -14,11 +14,11 @@ Output
 Architecture- 3 Tier Architecture
 
 1. BDD Feature FIle
-2. Step Definition+ Hooks
+2. Step Definition + Hooks
 3. PageObject+Utilities.
 
 Techs used:
-1.Build Tool: Maven
-2.Feature file & Implementation : Cucumber
-3.Webdriver Navigation: Selenium
-4.Assertion Library: Junit
+1. Build Tool: Maven
+2. Feature file & Implementation : Cucumber
+3. Webdriver Navigation: Selenium
+4. Assertion Library: Junit
